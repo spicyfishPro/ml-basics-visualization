@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>混淆矩阵和分类性能指标的可视化演示</title>
-    <script src="https://cdn.bootcdn.net/ajax/libs/plotly.js/2.24.1/plotly.min.js"></script>
+    <script src="/plotly.min.js"></script>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/plotly.js/2.24.1/plotly.min.js"></script> -->
     <script>
         window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>
-    <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+    <script async src="/tex-mml-chtml.js"></script>
+    <!-- <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script> -->
     <style>
         /* --- CSS 样式保持不变 --- */
         :root {
@@ -319,11 +321,11 @@ const COLORS = {
             marker: { color: COLORS.TP, opacity: commonOpacity }, xbins: histBins
         };
         const traceFN = {
-            x: probsFN, type: 'histogram', name: 'FN (漏报)',
+            x: probsFN, type: 'histogram', name: 'FN (假阴性/漏报)',
             marker: { color: COLORS.FN, opacity: commonOpacity }, xbins: histBins
         };
         const traceFP = {
-            x: probsFP, type: 'histogram', name: 'FP (误报)',
+            x: probsFP, type: 'histogram', name: 'FP (假阳性/误报)',
             marker: { color: COLORS.FP, opacity: commonOpacity }, xbins: histBins
         };
         const traceTN = {
