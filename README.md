@@ -23,11 +23,8 @@
 # 克隆项目
 git clone https://github.com/your-username/ml-basics-visualization.git
 
-# 进入项目目录
-cd ml-basics-visualization
-
-# 打开混淆矩阵演示
-open visualization/confusion-matrix-demo/index.html
+# 打开演示
+open index.html
 ```
 
 ### 本地运行
@@ -36,13 +33,13 @@ open visualization/confusion-matrix-demo/index.html
 python -m http.server 8000
 
 # 然后访问
-http://localhost:8000/visualization/confusion-matrix-demo/index.html
+http://localhost:8000/index.html
 ```
 
 ## 📚 可视化模块
 
 ### 🔍 混淆矩阵与分类指标演示
-**路径**: `visualization/confusion-matrix-demo/index.html`
+**路径**: `index.html`
 
 通过拖动阈值滑块，实时观察：
 - ✅ 真阳性 (TP) - 正确预测的正样本
@@ -69,20 +66,6 @@ http://localhost:8000/visualization/confusion-matrix-demo/index.html
 - **样式框架**: CSS Variables + Flexbox + Grid
 - **CDN服务**: BootCDN
 
-## 📁 项目结构
-
-```
-ml-basics-visualization/
-├── README.md                          # 项目说明文档
-├── CLAUDE.md                          # AI上下文文档
-├── visualization/                     # 可视化模块目录
-│   ├── CLAUDE.md                      # 模块导航文档
-│   └── confusion-matrix-demo/         # 混淆矩阵演示
-│       ├── index.html                 # 主演示页面
-│       └── CLAUDE.md                  # 模块详细文档
-└── .claude/                           # AI辅助配置
-    └── index.json                     # 项目索引
-```
 
 ## 🎯 学习目标
 
@@ -104,30 +87,6 @@ ml-basics-visualization/
 3. **响应式布局**：适配不同屏幕尺寸
 4. **文档完整**：提供详细的模块文档
 5. **CDN优先**：优先使用CDN加载依赖
-
-### 模块结构规范：
-```
-your-module/
-├── index.html              # 主演示页面
-├── CLAUDE.md               # 模块文档
-└── assets/                 # 静态资源（可选）
-```
-
-## 📈 未来规划
-
-- [ ] **ROC曲线演示** - 理解AUC和真正率/假正率
-- [ ] **交叉验证演示** - 可视化K折交叉验证过程
-- [ ] **决策边界演示** - 2D/3D特征空间中的分类决策
-- [ ] **回归指标演示** - MSE、MAE、R²等回归指标可视化
-- [ ] **聚类评估演示** - 轮廓系数、DB指数等聚类指标
-
-## 🐛 问题反馈
-
-如果您发现任何问题或有改进建议，请：
-
-1. 在[Issues](https://github.com/your-username/ml-basics-visualization/issues)中提交问题
-2. 提供详细的复现步骤和截图
-3. 说明您的浏览器和操作系统环境
 
 ## 📄 许可证
 
